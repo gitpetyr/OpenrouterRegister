@@ -149,7 +149,7 @@ while True:
         page1.ele("@text()=Create").click()
         api_key = page1.ele("@tag()=code").text
         print(api_key)
-        open("keys.txt",'a').write(api_key+"\n")
+        open("/data/keys.txt",'a').write(api_key+"\n")
     except Exception as e:
         print(e)
         pass
