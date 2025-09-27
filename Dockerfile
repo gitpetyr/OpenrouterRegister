@@ -47,6 +47,8 @@ RUN mkdir -p /etc/apt/keyrings && \
     apt-get install -y google-chrome-stable && \
     rm -rf /var/lib/apt/lists/*
 
+RUN mkdir -p /app
+
 COPY . .
 
 RUN pip install --no-cache-dir DrissionPage PyVirtualDisplay
