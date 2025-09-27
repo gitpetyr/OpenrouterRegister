@@ -65,7 +65,7 @@ class emailManger():
         co = ChromiumOptions()
         co.set_argument("--no-sandbox")
         co.auto_port(True)
-        co.incognito()
+        # co.incognito()
         co.set_timeouts(base=4)
 
         # change this to the path of the folder containing the extension
@@ -106,7 +106,7 @@ while True:
         co.set_argument("--no-sandbox")
         # co.set_browser_path("./Chromium.app/Contents/MacOS/Chromium")
         co.auto_port(True)
-        co.incognito()
+        # co.incognito()
 
         co.set_timeouts(base=4)
 
